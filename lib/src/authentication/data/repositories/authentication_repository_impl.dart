@@ -17,6 +17,12 @@ class AuthenticationRepositoryImpl implements AuthenticationRepository {
     required String name,
     required String avatar,
   }) async {
+    // Desenvolvimento Orientado por Testes
+    // chamar a fonte de dados remota
+    // verificar se o método retorna os dados corretos
+    // certificar-se de que ele retorna os dados corretos se não houver exceção
+    // verificar se, quando o remoteDataSource lança uma exceção, retornamos uma falha
+
     try {
       await _remoteDataSource.createUser(
         createdAt: createdAt,
@@ -27,14 +33,18 @@ class AuthenticationRepositoryImpl implements AuthenticationRepository {
       return const Right(null);
     } on APIException catch (e) {
       return Left(
-        APIFailure.fromException(e)
+        APIFailure.fromException(e),
       );
     }
   }
 
   @override
-  ResultFuture<List<User>> getUsers() {
-    // TODO: implement getUsers
-    throw UnimplementedError();
+  ResultFuture<List<User>> getUsers() async {
+    try {
+      final result = await _remoteDataSource.getUsers();
+      return Right(result);
+    } on APIException catch (e) {
+      return Left(APIFailure.fromException(e));
+    }
   }
 }

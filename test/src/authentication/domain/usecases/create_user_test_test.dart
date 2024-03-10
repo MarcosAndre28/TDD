@@ -35,7 +35,7 @@ void main() {
             createdAt: any(named: 'createdAt'),
             name: any(named: 'name'),
             avatar: any(named: 'avatar'),
-          ))
+          ),)
           .thenAnswer((_) async => const Right(null));
 
       // Agir
@@ -47,7 +47,7 @@ void main() {
         () => repository.createUser(
             createdAt: params.createdAt,
             name: params.name,
-            avatar: params.avatar),
+            avatar: params.avatar,),
       ).called(1);
 
       verifyNoMoreInteractions(repository);
