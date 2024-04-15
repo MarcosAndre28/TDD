@@ -1,6 +1,6 @@
 ## Introdução
 
-Esse projeto foi construido com fodo de estudo e aprendizado, com o objetivo de aplicar os conceitos
+Esse projeto foi construido com foco de estudo e aprendizado, com o objetivo de aplicar os conceitos
 de Clean Architecture e TDD. O projeto consiste em um aplicativo de cadastro de usuários, bem
 simples como foco nos ponto de Clean Architecture e Test-Driven Development (TDD).
 
