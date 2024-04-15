@@ -32,26 +32,80 @@ uma dor de cabeça, além de garantir a integridade do core do projeto.
 
 ## Estrutura do Projeto
 
-| Caminho                    | Descrição                                                                                                                               |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `lib`                      | Pasta raiz onde todos os arquivos Dart do seu projeto Flutter são armazenados.                                                          |
-| `├── core`                 | Contém os componentes centrais do seu projeto que são usados em várias partes do seu aplicativo.                                        |
-| `│   ├── errors`           | Contém classes que representam erros ou falhas que podem ocorrer em seu aplicativo.                                                     |
-| `│   ├── services`         | Contém classes que fornecem serviços para outras partes do seu aplicativo.                                                              |
-| `│   ├── utils`            | Contém várias funções utilitárias que são usadas em todo o aplicativo.                                                                  |
-| `├── src`                  | Onde o núcleo funcional do aplicativo reside, normalmente dividido em módulos específicos.                                              |
-| `│   ├── authentication`   | Módulo funcional, dedicado à autenticação dos usuários no aplicativo.                                                                   |
-| `│   ├── data`             | Contém o código que lida com a obtenção, transformação e armazenamento de dados.                                                        |
-| `│   │   ├── datasources`  | Contém classes que buscam dados de várias fontes, como uma API ou um banco de dados.                                                    |
-| `│   │   ├── model`        | Contém classes que representam os dados que seu aplicativo usa.                                                                         |
-| `│   │   └── repositories` | Abstrai a origem dos dados. Repositórios são usados para buscar dados das fontes de dados.                                              |
-| `│   ├── domain`           | Contém as regras de negócio do seu aplicativo.                                                                                          |
-| `│   │   ├── entities`     | Contém classes que representam os objetos centrais do seu negócio.                                                                      |
-| `│   │   ├── repositories` | Contém interfaces que definem os métodos que serão usados para acessar os dados.                                                        |
-| `│   │   └── usecases`     | Contém classes que contêm a lógica de negócios. Cada Use Case representa uma ação que o usuário pode fazer na aplicação.                |
-| `│   └── presentation`     | Responsável por tudo relacionado à interface do usuário. Lida com a exibição dos dados ao usuário e a manipulação das ações do usuário. |
-| `├── main.dart`            | Ponto de entrada do seu aplicativo. Responsável por iniciar o aplicativo e conectar todas as partes juntas.                             |
-
+<table>
+  <tr>
+    <th>Caminho</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td><code>lib</code></td>
+    <td>Pasta raiz onde todos os arquivos Dart do seu projeto Flutter são armazenados.</td>
+  </tr>
+  <tr>
+    <td><code>├── core</code></td>
+    <td>Contém os componentes centrais do seu projeto que são usados em várias partes do seu aplicativo.</td>
+  </tr>
+  <tr>
+    <td><code>│   ├── errors</code></td>
+    <td>Contém classes que representam erros ou falhas que podem ocorrer em seu aplicativo.</td>
+  </tr>
+  <tr>
+    <td><code>│   ├── services</code></td>
+    <td>Contém classes que fornecem serviços para outras partes do seu aplicativo.</td>
+  </tr>
+  <tr>
+    <td><code>│   ├── utils</code></td>
+    <td>Contém várias funções utilitárias que são usadas em todo o aplicativo.</td>
+  </tr>
+  <tr>
+    <td><code>├── src</code></td>
+    <td>Onde o núcleo funcional do aplicativo reside, normalmente dividido em módulos específicos.</td>
+  </tr>
+  <tr>
+    <td><code>│   ├── authentication</code></td>
+    <td>Módulo funcional, dedicado à autenticação dos usuários no aplicativo.</td>
+  </tr>
+  <tr>
+    <td><code>│   ├── data</code></td>
+    <td>Contém o código que lida com a obtenção, transformação e armazenamento de dados.</td>
+  </tr>
+  <tr>
+    <td><code>│   │   ├── datasources</code></td>
+    <td>Contém classes que buscam dados de várias fontes, como uma API ou um banco de dados.</td>
+  </tr>
+  <tr>
+    <td><code>│   │   ├── model</code></td>
+    <td>Contém classes que representam os dados que seu aplicativo usa.</td>
+  </tr>
+  <tr>
+    <td><code>│   │   └── repositories</code></td>
+    <td>Abstrai a origem dos dados. Repositórios são usados para buscar dados das fontes de dados.</td>
+  </tr>
+  <tr>
+    <td><code>│   ├── domain</code></td>
+    <td>Contém as regras de negócio do seu aplicativo.</td>
+  </tr>
+  <tr>
+    <td><code>│   │   ├── entities</code></td>
+    <td>Contém classes que representam os objetos centrais do seu negócio.</td>
+  </tr>
+  <tr>
+    <td><code>│   │   ├── repositories</code></td>
+    <td>Contém interfaces que definem os métodos que serão usados para acessar os dados.</td>
+  </tr>
+  <tr>
+    <td><code>│   │   └── usecases</code></td>
+    <td>Contém classes que contêm a lógica de negócios. Cada Use Case representa uma ação que o usuário pode fazer na aplicação.</td>
+  </tr>
+  <tr>
+    <td><code>│   └── presentation</code></td>
+    <td>Responsável por tudo relacionado à interface do usuário. Lida com a exibição dos dados ao usuário e a manipulação das ações do usuário.</td>
+  </tr>
+  <tr>
+    <td><code>├── main.dart</code></td>
+    <td>Ponto de entrada do seu aplicativo. Responsável por iniciar o aplicativo e conectar todas as partes juntas.</td>
+  </tr>
+</table>
 ## Camadas da Clean Architecture
 
 A Clean Architecture é composta por várias camadas, cada uma com sua própria responsabilidade:
