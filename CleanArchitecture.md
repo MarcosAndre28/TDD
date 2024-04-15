@@ -43,14 +43,14 @@ uma dor de cabeça, além de garantir a integridade do core do projeto.
 | `│   ├── authentication`   | Módulo funcional, dedicado à autenticação dos usuários no aplicativo.                                                                   |
 | `│   ├── data`             | Contém o código que lida com a obtenção, transformação e armazenamento de dados.                                                        |
 | `│   │   ├── datasources`  | Contém classes que buscam dados de várias fontes, como uma API ou um banco de dados.                                                    |
-| `│   │   ├── model`        | Contém classes que representam os dados que seu aplicativo usa.                                                                         |
+| `│   │   ├── models`       | Contém classes que representam os dados que seu aplicativo usa.                                                                         |
 | `│   │   └── repositories` | Abstrai a origem dos dados. Repositórios são usados para buscar dados das fontes de dados.                                              |
 | `│   ├── domain`           | Contém as regras de negócio do seu aplicativo.                                                                                          |
 | `│   │   ├── entities`     | Contém classes que representam os objetos centrais do seu negócio.                                                                      |
 | `│   │   ├── repositories` | Contém interfaces que definem os métodos que serão usados para acessar os dados.                                                        |
 | `│   │   └── usecases`     | Contém classes que contêm a lógica de negócios. Cada Use Case representa uma ação que o usuário pode fazer na aplicação.                |
 | `│   └── presentation`     | Responsável por tudo relacionado à interface do usuário. Lida com a exibição dos dados ao usuário e a manipulação das ações do usuário. |
-| `├── main.dart`            | Ponto de entrada do seu aplicativo. Responsável por iniciar o aplicativo e conectar todas as partes juntas.                             |
+| `└── main.dart`            | Ponto de entrada do seu aplicativo. Responsável por iniciar o aplicativo e conectar todas as partes juntas.                             |
 
 ## Camadas da Clean Architecture
 
