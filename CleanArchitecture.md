@@ -44,7 +44,7 @@ uma dor de cabeça, além de garantir a integridade do core do projeto.
 | `│   ├── data`             | Contém o código que lida com a obtenção, transformação e armazenamento de dados.                                                        |
 | `│   │   ├── datasources`  | Contém classes que buscam dados de várias fontes, como uma API ou um banco de dados.                                                    |
 | `│   │   ├── models`       | Contém classes que representam os dados que seu aplicativo usa.                                                                         |
-| `│   │   └── repositories` | Abstrai a origem dos dados. Repositórios são usados para buscar dados das fontes de dados.                                              |
+| `│   │   └── repositories`    | Abstrai a origem dos dados. Repositórios são usados para buscar dados das fontes de dados.                                              |
 | `│   ├── domain`           | Contém as regras de negócio do seu aplicativo.                                                                                          |
 | `│   │   ├── entities`     | Contém classes que representam os objetos centrais do seu negócio.                                                                      |
 | `│   │   ├── repositories` | Contém interfaces que definem os métodos que serão usados para acessar os dados.                                                        |
